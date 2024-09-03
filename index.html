@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js">
+
+    <title>Presentation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="Logo-content">
+            <h1>Demo Project</h1>
+        </div>
+        <button id="modeToggle">Light/Dark Mode</button>
+    </header>
+
+
+
+    <section class="section-1">
+
+        <div class="Presentation-wrapper">
+          
+            <div class="left-arrow">
+                <i class="fa fa-angle-left" style="font-size:50px"></i>
+            </div>
+            <section class="slides">
+            <div class="slide" id="slide-1">
+                <i class="fa fa-home"></i>
+                <p class="para-graph">welcome to  our Demo Presentation
+                </p>
+            </div>
+            <div class="slide" id="slide-2">
+                <i class="fa fa-home logo"></i>
+                <h2>Section-Images</h2>
+                <div class="img-slide">
+                    <img src="modern-equipped-computer-lab.jpg" alt="modern" width="350px" height="350px">
+                    <img src="creative-people-working-office.jpg" alt="office" width="350px" height="350px">
+                </div>
+
+            </div>
+            <div class="slide" id="slide-3">
+                <i class="fa fa-home logo"></i>
+                <h2>Section- Bar Chart</h2>
+                <div class="chart-in">
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                </div>
+            </div>
+            <div class="slide" id="slide-4">
+                <i class="fa fa-home logo"></i>
+                <h2>Section-CodeBlock</h2>
+                <div class="code-container">
+                    <div class="code-header">
+                        <span>JavaScript Example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-javascript" id="codeBlock">
+                    // Function to add two numbers
+                    function add(a, b) {
+                        return a + b;
+                    }
+                
+                    console.log(add(2, 3)); // Output: 5
+                    </code></pre>
+                </div>
+                
+                
+            </div>
+            <div class="slide" id="slide-5">
+                <i class="fa fa-home logo"></i>
+                <h2>Section-Python Code Compiler</h2>
+                <div class="container">
+                    <h1>Python Code Execution</h1>
+                    <textarea id="pythonCode" placeholder="Write your Python code here... Ex:-  2+3, 3*2, 4/2"></textarea>
+                    <button id="runButton">Run Code</button>
+                    <pre id="output"></pre>
+                </div>
+            
+            </div>
+            <div class="slide" id="slide-6">
+                <i class="fa fa-home logo"></i>
+                <h2>Section-End </h2>
+                <div class="end">
+                    <h1>Thank you so much</h1>
+                    <p>Connect with  me on  musthashaik@gmail.com</p>
+                </div>
+            </div>
+        </section>
+            <div class="right-arrow">
+                <i class="fa fa-angle-right" style="font-size :50px"></i>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="fotter">
+            <h1>© 2024 Demo Company. All rights reserved.</h1>
+             <h1>Contant Email:- musthashaik@gmail.com</h1>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.3/full/pyodide.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
